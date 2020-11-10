@@ -1,0 +1,7 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+body {
+  background: rgba(0, 0, 0, 0.5);
+}
