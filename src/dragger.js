@@ -1,7 +1,19 @@
-{
-  const bodyElm = document.getElementsByTagName('body')[0];
-  const canvasElm = document.getElementById('draggerCnavas');
+const bodyElm = document.getElementsByTagName('body')[0];
+const canvasElm = document.getElementById('draggerCnavas');
 
+InitCanvas(bodyElm, canvasElm);
+InitEResize(bodyElm, canvasElm);
+
+
+function InitEResize(bodyElm, canvasElm) {
+  window.addEventListener("resize", function(event) {
+    canvasElm.width = bodyElm.clientWidth;
+    canvasElm.height = bodyElm.clientHeight;
+  });
+}
+
+
+function InitCanvas(bodyElm, canvasElm) {
   // fill canvas
   canvasElm.width = bodyElm.clientWidth;
   canvasElm.height = bodyElm.clientHeight;
@@ -51,4 +63,5 @@
     context.fillStyle = "white";
     context.fillText("W: " + w + ", H:" + h, x, y);
   }
+
 }
