@@ -26,6 +26,7 @@ app.on('ready', function() {
     show: true,
     transparent: true,
     resizable: true,
+    opacity: 0.5,
     'always-on-top': true // 一番手前に表示する
   });
   mainWindow.loadURL('file://' + __dirname + '/index.html');
