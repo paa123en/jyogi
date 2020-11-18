@@ -24,7 +24,6 @@ app.on('ready', function() {
     height: size.height, // 最大サイズで表示する
     frame: true, // ウィンドウフレームを表示
     show: true,
-    transparent: true,
     resizable: true,
     opacity: 0.5,
     'always-on-top': true // 一番手前に表示する
